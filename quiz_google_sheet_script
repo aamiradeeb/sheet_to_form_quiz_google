@@ -1,5 +1,4 @@
-Adeeb Script Google Form from Sheets
-Updated automatically every 5 minutes
+
 function popForm() {
  
   var ss = SpreadsheetApp.getActive();
@@ -18,7 +17,7 @@ function popForm() {
   Logger.log(myAnswers);
  
   // Create the form as a quiz.  The resulting form's "Quiz options" are different from a manually created quiz.  Be aware (and change manually if needed!
-  var form = FormApp.create('States and Capitals Quiz');
+  var form = FormApp.create('Quiz');
   form.setIsQuiz(true);
  
   // Write out each multiple choice question to the form.
