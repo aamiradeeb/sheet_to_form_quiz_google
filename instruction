@@ -1,0 +1,23 @@
+
+
+In this video, we will use 2 Google apps, which are Google Sheets and Google Forms, to create a usable quiz from scratch
+
+The Spreadsheet.
+Step 1.  Create a new Google Sheets document.
+Step 2.  OK, our target is to make column A the Question, and Column B the correct Answer.  Columns C, D, E, and F will be incorrect distractor Choices.   
+
+Fill that formula down in Column C, C2 through C50.  Columns C, D, E, and F will have distractors at this point, with no duplicates per row.  
+OK, the source for the quiz is ready.  When the app script runs, it will shuffle the 5 choices and then write to the quiz in Forms.  
+We have 1 more step to do: add our app script to the sheets document and run it.  The app script creates the Google form, and writes the 50 questions out to it.
+
+The App Script.
+Step 1.  In our Google sheets doc, go to Tools and Script editor.  Replace the default content with the attached script.  
+There are 2 functions: popForm and shuffleEachRow.  Function shuffleEachRow is not used directly, it is just a sub-function for  popForm.
+Click Save.  
+Give this project a nice name of some sort, like “Capitals”.
+Run the function popForm.  First time through, there will be a string of permission boxes to navigate.  Just agree to everything until you get through Allow.  The script starts to run --  reading the rows from Sheet1, and writing them out to our Form.  This process takes about 1 minute to complete the 50 rows.
+Run the Form.
+Open the form.  Eureka!  It is done.  Preview the quiz to make sure it fits our needs, and share it out when ready.
+Thanks for your attention. 
+Chicago Computer Classes
+:
